@@ -1,4 +1,3 @@
-import ProfileImage from "../assets/profile__img.svg";
 import Socials from "./main/Socials";
 import styles from "./Main.module.scss";
 import Footer from "./Footer";
