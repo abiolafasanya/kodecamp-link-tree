@@ -8,14 +8,15 @@
   max-width: 1440px;
   @include sm() {
     width: 90%;
-
+    
     padding: 1rem;
   }
   margin: 5rem auto;
   border-radius: 4px;
   box-shadow: $shadow;
-
+  
   &_profile {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -26,6 +27,40 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  &_shareIcon {
+    position: absolute;
+    right: -15rem;
+    top: 0rem;
+    border-radius: 50%;
+    border: 1px dashed map-get($dark, "300");
+    cursor: pointer;
+    border-spacing: 1rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    span {
+      display: none;
+    }
+    @include md() {
+      right: -10rem;
+    }
+    @include sm() {
+      right: -7.5rem;
+      padding: 0;
+      img {
+        display: none;
+      }
+      span {
+        display: flex;
+        color: map-get($dark, "300");
+        font-size: 22px;
+      }
     }
   }
 }
