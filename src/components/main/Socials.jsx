@@ -22,8 +22,8 @@ const Social = (props) => {
 const SocialPlatform = () => {
   return (
     <div className={styles.platforms}>
-      <img src={'/public/github.svg'} alt="github" />
-      <img src={'/public/slack.svg'} alt="slack" />
+      <img src={'./public/github.svg'} alt="github" />
+      <img src={'./public/slack.svg'} alt="slack" />
     </div>
   );
 };
