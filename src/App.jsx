@@ -1,15 +1,14 @@
 import './App.scss'
 import Header from './components/Header'
 import Main from './components/Main'
-import styles from './styles/colors.scss'
 
 function App() {
 
   return (
-    <main className={styles.app}>
+    <div>
       <Header />
       <Main />
-    </main>
+    </div>
   )
 }
 
