@@ -1,10 +1,11 @@
 import styles from "./Header.module.scss";
+import Logo from "../../public/logo.svg"
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header_top}>
-        <span><img src={'./public/logo.svg'} alt="image logo" /></span>
+        <span><img src={Logo} alt="image logo" /></span>
         <span>Frontend</span>
         <span>{Arrow}</span>
         <span>stage 1 Task</span>

@@ -1,6 +1,8 @@
 import React from "react";
 import { socials } from "../../data/social";
 import styles from "./Socials.module.scss";
+import Github from "../../../public/github.svg"
+import Slack from "../../../public/slack.svg"
 
 const Socials = () => {
   return (
@@ -19,11 +21,12 @@ const Social = (props) => {
   return <div className={styles.social}>{props.text}</div>;
 };
 
+
 const SocialPlatform = () => {
   return (
     <div className={styles.platforms}>
-      <img src={'./public/github.svg'} alt="github" />
-      <img src={'./public/slack.svg'} alt="slack" />
+      <img src={Github} alt="github" />
+      <img src={Slack} alt="slack" />
     </div>
   );
 };
