@@ -1,18 +1,25 @@
 import styles from "./Header.module.scss";
-import Logo from "../../public/logo.svg"
+import Logo from "../../public/logo.svg";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.header_top}>
-        <span><img src={Logo} alt="image logo" /></span>
-        <span>Frontend</span>
-        <span>{Arrow}</span>
-        <span>stage 1 Task</span>
-      </div>
-      <div className={styles.header_bottom}>
-        <h2 className={styles.header_bottom_title}>Stage 1 Task</h2>
-        <p className={styles.header_bottom_text}>Create a page like Linktree that allows a person show their personal profile and link to various digital things that they sell.</p>
+      <div className={styles.container}>
+        <div className={styles.header_top}>
+          <span>
+            <img src={Logo} alt="image logo" />
+          </span>
+          <span>Frontend</span>
+          <span>{Arrow}</span>
+          <span>stage 1 Task</span>
+        </div>
+        <div className={styles.header_bottom}>
+          <h2 className={styles.header_bottom_title}>Stage 1 Task</h2>
+          <p className={styles.header_bottom_text}>
+            Create a page like Linktree that allows a person show their personal
+            profile and link to various digital things that they sell.
+          </p>
+        </div>
       </div>
     </header>
   );
